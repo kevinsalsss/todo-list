@@ -1,0 +1,88 @@
+body {
+  font-family: 'Courier New', monospace;
+  background: #fef8ec;
+  margin: 0;
+  padding: 20px;
+  color: #3b2f2f;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #704214;
+}
+
+form {
+  background: #fff7e6;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border: 2px dashed #d9a441;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(112, 66, 20, 0.2);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  color: #5e3c00;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #d4b483;
+  border-radius: 5px;
+  background-color: #fffaf0;
+}
+
+input[type="radio"] {
+  margin-right: 6px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #a9741a;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #8b5e00;
+}
+
+#lista-tareas {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tarea {
+  background: #fff4db;
+  border-left: 6px solid #c28500;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px rgba(190, 147, 37, 0.2);
+}
+
+.tarea h3 {
+  margin-top: 0;
+  color: #5b3500;
+}
+
+.tarea p {
+  margin: 6px 0;
+  color: #3e2b00;
+}
+
