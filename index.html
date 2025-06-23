@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Lista de Tareas</title>
-  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <h1>Mi Lista de Tareas</h1>
-  <p>Nombre del estudiante: __________________________</p>
+  <h1>Lista de Tareas</h1>
+  <h2>Kevin Salas </h2> 
 
-  <!-- Aquí irá el formulario y la lista generada con JavaScript -->
+  <form id="formulario-tarea">
+  
+    <label for="fecha">Fecha de entrega:</label>
+    <input type="date" id="fecha" required><br>
+
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion" maxlength="100" required><br>
+
+    <label for="tipo">Tipo:</label>
+    <select id="tipo" required>
+      <option value="">Selecciona</option>
+      <option value="Personal">Personal</option>
+      <option value="Trabajo">Trabajo</option>
+      <option value="Escuela">Escuela</option>
+    </select><br>
+
+    <label>Prioridad:</label>
+    <input type="radio" name="prioridad" value="Alta" required> Alta
+    <input type="radio" name="prioridad" value="Media"> Media
+    <input type="radio" name="prioridad" value="Baja"> Baja<br>
+
+    <button type="submit">Agregar tarea</button>
+  </form>
+
+  <div id="lista-tareas"></div>
 
   <script src="app.js"></script>
 </body>
